@@ -1,0 +1,10 @@
+"""Auth package."""
+
+from flask import Blueprint
+
+authentication = Blueprint('authentication',
+__name__, template_folder="templates")
+
+from app.auth import routes
+from app.auth import models
+from app.auth import decorators
